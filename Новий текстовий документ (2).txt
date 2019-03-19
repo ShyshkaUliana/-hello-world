@@ -1,0 +1,106 @@
+/*#include<iostream>
+using namespace std;
+
+void main()
+{
+	double a; //new result
+	double a0;//previous result
+	double b;
+	double eps;
+	int n;
+	//
+	cout << "eps=";
+	cin >> eps;
+	//
+	n = 1;
+	a = 1;
+	do
+	{
+		a0 = a;
+		//multiply
+		a = 1;
+		n = n + 1;
+		b = 1 + 1 / n;
+		for (int i = 0; i < n; i++)
+		{
+			a = a*b;
+		}
+
+	} while (abs(a0-a)>eps);
+	//
+	cout << "limit = " << a << endl;
+	cout << "origin = " << exp(1) << endl;
+	cout << endl;
+	system("pause");
+
+	
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+
+void main()
+{
+	double max; //max
+	double* a;  // array
+	int n;  //count
+	// input
+	cout << "n=";
+	cin >> n;
+	a = new double[n];
+	for (int i = 0; i < n; i++)
+	{
+		cout << "a[" << i << "] = ";
+		cin >> a[i];
+	}
+	//
+	//functioanl
+	max = a[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (max < a[i])
+		{
+			max = a[i];
+		}
+	}
+	//
+	// output
+	cout << "max = " << max << endl;
+	system("pause");
+}*/
+
+#include<iostream>
+using namespace std;
+
+void main()
+{
+	double max; //max
+	double* a;  // array
+	int n;  //count
+	// input
+	cout << "n=";
+	cin >> n;
+	a = new double[n];
+	for (int i = 0; i < n; i++)
+	{
+		cout << "a[" << i << "] = ";
+		cin >> a[i];
+	}
+	//
+	//functioanl
+	max = a[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (max < a[i])
+		{
+			max = a[i];
+		}
+	}
+	//
+	// output
+	cout << "max = " << max << endl;
+	delete[] a;
+	system("pause");
+}
